@@ -13,7 +13,7 @@ load_dotenv(dotenv_path)
 
 
 def startConection():
-# conexao = pymongo.MongoClient("mongodb+srv://admin:admin@cluster0.cqwgzyv.mongodb.net/?retryWrites=true&w=majority")
+# conexao = pymongo.MongoClient("")
     conexao = pymongo.MongoClient(os.environ.get("${teste}"))
     mydb = conexao['Jobs']
     return mydb
